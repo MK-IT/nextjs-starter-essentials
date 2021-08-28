@@ -1,7 +1,13 @@
 {
   "name": "nextjs-starter-essentials",
   "version": "0.1.0",
-  "private": true,
+  "description": "NextJS starter bundled with essential tools",
+  "keywords": [
+    "nextjs",
+    "starter",
+    "essentials",
+    "mkit"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,5 +24,15 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
     "typescript": "4.4.2"
-  }
+  },
+  "author": "MK IT Ltd. <hi@mkit.io>",
+  "homepage": "https://github.com/MK-IT/nextjs-starter-essentials",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MK-IT/nextjs-starter-essentials.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MK-IT/nextjs-starter-essentials/issues"
+  },
+  "license": "MIT"
 }
