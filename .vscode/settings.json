@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  // Code spellcheck to ignore project-specific words
+  "cSpell.words": ["mkit", "folderize", "commitlint"],
+
+  // Fix all auto-fixable issues reported by ESLint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
