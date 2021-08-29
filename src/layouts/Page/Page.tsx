@@ -1,15 +1,19 @@
 import React from "react";
 import type { FC } from "react";
 
-import SEO from "~layout/SEO";
-import Header from "~layout/Header";
-import Footer from "~layout/Footer";
+// import SEO from "@layout/SEO";
+import Header from "@layouts/Header";
+import Footer from "@layouts/Footer";
 
 import { PageProps } from "./Page.props";
 
-const Page: FC<PageProps> = ({ children, hasHeader, hasFooter }) => (
+const Page: FC<PageProps> = ({
+  children,
+  hasHeader = true,
+  hasFooter = true,
+}) => (
   <>
-    <SEO />
+    {/* <SEO /> */}
 
     {hasHeader && <Header />}
 
