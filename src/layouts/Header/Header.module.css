@@ -1,12 +1,9 @@
 .header {
   background: #6927ff;
-  margin-bottom: 1.5rem;
 }
 
 .header__container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .header__container__title {
