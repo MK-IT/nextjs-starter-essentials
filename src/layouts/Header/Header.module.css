@@ -1,0 +1,19 @@
+.header {
+  background: #6927ff;
+  margin-bottom: 1.5rem;
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.5rem 1rem;
+}
+
+.header__container__title {
+  margin: 0;
+}
+
+.header__container__title__link {
+  color: white;
+  text-decoration: none;
+}
