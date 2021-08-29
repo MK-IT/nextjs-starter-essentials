@@ -10,8 +10,9 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "format": "prettier --write .",
+    "format": "prettier --write src",
     "lint": "next lint",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

@@ -6,5 +6,8 @@
   // Fix all auto-fixable issues reported by ESLint
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+
+  // Enable running npm scripts from the Explorer menu
+  "npm.enableRunFromFolder": true
 }
