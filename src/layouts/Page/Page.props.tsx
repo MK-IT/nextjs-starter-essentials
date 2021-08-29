@@ -1,4 +1,4 @@
 export interface PageProps {
-  hasHeader: boolean;
-  hasFooter: boolean;
+  hasHeader?: boolean;
+  hasFooter?: boolean;
 }
