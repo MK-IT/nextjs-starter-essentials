@@ -9,5 +9,8 @@
   },
 
   // Enable running npm scripts from the Explorer menu
-  "npm.enableRunFromFolder": true
+  "npm.enableRunFromFolder": true,
+
+  // Enable reference hints via code lens
+  "typescript.referencesCodeLens.enabled": true
 }
