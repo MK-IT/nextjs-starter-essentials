@@ -3,9 +3,22 @@
 //
 module.exports = [
   {
+    type: "input",
+    name: "name",
+    message: "Choose a name",
+    hint: "(Use <PascalCase>, e.g. MyComponent)",
+    validate: (input) => {
+      if (!input) {
+        return "Name cannot be empty!";
+      }
+
+      return true;
+    },
+  },
+  {
     type: "multiselect",
     name: "options",
-    message: "Files to create",
+    message: "Choose files to create",
     hint: "(Use <space> to select, <return> to submit)",
     initial: ["index", "component"],
     choices: [
