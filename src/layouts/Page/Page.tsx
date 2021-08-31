@@ -1,7 +1,6 @@
 import React from "react";
 import type { FC } from "react";
 
-// import SEO from "@layout/SEO";
 import Header from "@layouts/Header";
 import Footer from "@layouts/Footer";
 
@@ -13,8 +12,6 @@ const Page: FC<PageProps> = ({
   hasFooter = true,
 }) => (
   <>
-    {/* <SEO /> */}
-
     {hasHeader && <Header />}
 
     <main>{children}</main>

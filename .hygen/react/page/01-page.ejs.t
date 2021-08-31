@@ -1,5 +1,5 @@
 ---
-to: src/pages/<%= name %>.tsx
+to: "<%= options.indexOf('page') !== -1 ? `src/pages/${name}.tsx` : null %>"
 ---
 <%
   var hasStyles = options.indexOf("styles") !== -1;
