@@ -13,6 +13,7 @@
     "gen": "HYGEN_TMPLS=.hygen hygen",
     "gen:component": "HYGEN_TMPLS=.hygen hygen react component",
     "gen:page": "HYGEN_TMPLS=.hygen hygen react page",
+    "gen:hook": "HYGEN_TMPLS=.hygen hygen react hook",
     "format": "prettier --write src",
     "lint": "next lint",
     "debug": "NODE_OPTIONS='--inspect' next dev",
