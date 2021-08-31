@@ -14,6 +14,7 @@
     "gen:component": "HYGEN_TMPLS=.hygen hygen react component",
     "gen:page": "HYGEN_TMPLS=.hygen hygen react page",
     "gen:hook": "HYGEN_TMPLS=.hygen hygen react hook",
+    "gen:api": "HYGEN_TMPLS=.hygen hygen nextjs api",
     "format": "prettier --write src",
     "lint": "next lint",
     "debug": "NODE_OPTIONS='--inspect' next dev",
