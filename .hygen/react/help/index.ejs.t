@@ -1,5 +1,6 @@
 ---
 message: |
-  hygen {bold generator new} --name [NAME] --action [ACTION]
-  hygen {bold generator with-prompt} --name [NAME] --action [ACTION]
+  yarn gen {bold <GENERATOR> <ACTION>} <ComponentName> [--dry]
+  yarn {bold gen react component} <ComponentName>
+  yarn {bold gen:component} <ComponentName>
 ---
