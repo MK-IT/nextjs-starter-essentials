@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "prepare": "husky install",
+    "gen": "HYGEN_TMPLS=.hygen hygen",
+    "gen:component": "HYGEN_TMPLS=.hygen hygen react component",
     "format": "prettier --write src",
     "lint": "next lint",
     "debug": "NODE_OPTIONS='--inspect' next dev",
@@ -34,6 +36,7 @@
     "eslint-config-next": "11.1.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
+    "hygen": "^6.1.0",
     "prettier": "^2.3.2",
     "standard-version": "^9.3.1",
     "typescript": "4.4.2"
