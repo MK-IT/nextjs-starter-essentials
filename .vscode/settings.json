@@ -20,5 +20,8 @@
   "npm.enableRunFromFolder": true,
 
   // Enable reference hints via code lens
-  "typescript.referencesCodeLens.enabled": true
+  "typescript.referencesCodeLens.enabled": true,
+
+  // Enable VSC built-in bracket colorization instead of using an extension
+  "editor.bracketPairColorization.enabled": true
 }
