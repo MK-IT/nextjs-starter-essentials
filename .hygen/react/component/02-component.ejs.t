@@ -16,9 +16,9 @@ import styles from "./<%= Name %>.module.css";
 import { <%= Name %>Props } from "./<%= Name %>.props";
 <% } -%>
 
-const <%= Name %>: FC<%- hasInterface ? `<${Name}Props>` : null %> = (<%- hasInterface ? "props" : null %>) => {
+const <%= Name %>: FC<%- hasInterface ? `<${Name}Props>` : null %> = (<%- hasInterface ? "/* props */" : null %>) => {
   return (
-    <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.camelCase(name)}\}` : null)%>><%= Name %></div>
+    <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.pascal(name)}\}` : null)%>><%= Name %></div>
   );
 };
 
