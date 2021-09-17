@@ -9,6 +9,7 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json",
   },
+  ignorePatterns: [".eslintrc.js"],
   rules: {
     "react/jsx-props-no-spreading": "warn",
   },
