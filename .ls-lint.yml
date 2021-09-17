@@ -1,0 +1,22 @@
+ls:
+  src/components:
+    .dir: PascalCase | lowercase
+    .module.css: PascalCase
+    .props.tsx: PascalCase
+    .tsx: PascalCase | lowercase
+  src/hooks:
+    .dir: camelCase | lowercase
+    .tsx: camelCase | lowercase
+  src/layouts:
+    .dir: PascalCase | lowercase
+    .module.css: PascalCase
+    .props.tsx: PascalCase
+    .tsx: PascalCase | lowercase
+  src/pages:
+    .dir: kebab-case | lowercase
+    .tsx: kebab-case | lowercase
+  src/styles:
+    .dir: kebab-case | lowercase
+    .tsx: kebab-case | lowercase
+    .module.css: PascalCase
+    .css: kebab-case | lowercase

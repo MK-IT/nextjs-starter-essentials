@@ -16,6 +16,7 @@
     "gen:hook": "HYGEN_TMPLS=.hygen hygen react hook",
     "gen:api": "HYGEN_TMPLS=.hygen hygen nextjs api",
     "format": "prettier --write src",
+    "lint:fs": "ls-lint",
     "lint": "eslint --fix src",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next dev",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@ls-lint/ls-lint": "^1.10.0",
     "@next/eslint-plugin-next": "^11.1.2",
     "@types/react": "17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
