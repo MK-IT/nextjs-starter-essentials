@@ -8,7 +8,8 @@
     "multiselect",
     "nextjs",
     "postbuild",
-    "TMPLS"
+    "TMPLS",
+    "lastmod"
   ],
 
   // Fix all auto-fixable issues reported by ESLint

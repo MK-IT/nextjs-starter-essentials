@@ -1,6 +1,6 @@
 // Configuration of `next-seo`; see https://www.npmjs.com/package/next-seo
-/** @type {import('next-seo').DefaultSeoProps} */
 
+/** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOProps = {
   titleTemplate: "NextJS Starter | %s",
   defaultTitle: "NextJS Starter By MK IT",
