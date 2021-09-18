@@ -7,4 +7,5 @@ module.exports = {
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/", disallow: "/api/*" }],
   },
+  autoLastmod: false,
 };
