@@ -1,12 +1,10 @@
-.container {
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Home {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem 1.5rem;
 }
 
-.main {
+.Home__Container {
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -15,34 +13,34 @@
   align-items: center;
 }
 
-.title a {
-  color: #6927ff;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
+.Home__Title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+
+  & a {
+    color: #6927ff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
+.Home__Description {
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-.code {
+.Home__Title,
+.Home__Description {
+  text-align: center;
+}
+
+.Home__Code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
@@ -51,7 +49,7 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+.Home__Grid {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +58,7 @@
   margin-top: 3rem;
 }
 
-.card {
+.Home__Grid__Card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -70,28 +68,28 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
-}
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #6927ff;
-  border-color: #6927ff;
-}
+  &:hover,
+  &:focus,
+  &:active {
+    color: #6927ff;
+    border-color: #6927ff;
+  }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
+  & h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  & p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .Home__Grid {
     width: 100%;
     flex-direction: column;
   }

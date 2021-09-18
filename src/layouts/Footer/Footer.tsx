@@ -4,7 +4,7 @@ import type { FC } from "react";
 import styles from "./Footer.module.scss";
 
 const Footer: FC = () => (
-  <footer className={styles.footer}>
+  <footer className={styles.Footer}>
     © {new Date().getFullYear()}, Built with
     {` `}
     <a href="https://www.nextjs.org" target="_blank" rel="noopener noreferrer">

@@ -1,9 +1,16 @@
-.footer {
+.Footer {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1rem 1.5rem;
+  max-width: 800px;
+  padding: 1rem 1.5rem;
+
+  & a {
+    color: #6927ff;
+  }
 }
 
-.footer a {
-  color: #6927ff;
+@media (max-width: 600px) {
+  .Footer {
+    text-align: center;
+    padding: 1rem;
+  }
 }
