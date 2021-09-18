@@ -16,6 +16,9 @@
     "source.fixAll.eslint": true
   },
 
+  // Move Sidebar to the right-hand side
+  "workbench.sideBar.location": "right",
+
   // Enable running npm scripts from the Explorer menu
   "npm.enableRunFromFolder": true,
 
