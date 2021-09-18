@@ -1,0 +1,34 @@
+.NotFound {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotFound__Body {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotFound__Title {
+  color: #6927ff;
+}
+
+.NotFound__Link {
+  color: #6927ff;
+  border: 1px solid #6927ff;
+  border-radius: 4px;
+  padding: 12px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    background: #6927ff;
+  }
+}
