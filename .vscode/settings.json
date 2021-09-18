@@ -2,12 +2,13 @@
 {
   // Code spellcheck to ignore project-specific words
   "cSpell.words": [
-    "TMPLS",
     "commitlint",
     "hygen",
     "mkit",
     "multiselect",
-    "nextjs"
+    "nextjs",
+    "postbuild",
+    "TMPLS"
   ],
 
   // Fix all auto-fixable issues reported by ESLint

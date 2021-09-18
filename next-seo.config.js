@@ -1,3 +1,4 @@
+// Configuration of `next-seo`; see https://www.npmjs.com/package/next-seo
 /** @type {import('next-seo').DefaultSeoProps} */
 
 const defaultSEOProps = {

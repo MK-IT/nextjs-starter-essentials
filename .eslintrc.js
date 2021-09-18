@@ -9,7 +9,8 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json",
   },
-  ignorePatterns: [".eslintrc.js"],
+  // silence TS lint error on JS files
+  ignorePatterns: [".eslintrc.js", "next-sitemap.config.js"],
   rules: {
     "react/jsx-props-no-spreading": "warn",
   },
