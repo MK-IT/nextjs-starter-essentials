@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/MK-IT/nextjs-starter-essentials/compare/v0.1.0...v0.1.1) (2021-09-18)
+
+
+### Features
+
+* add Dependabot to scan for package updates every month ([f5052eb](https://github.com/MK-IT/nextjs-starter-essentials/commit/f5052ebb73d459d2be1aff310b46ae04e806fc4c))
+* add Sass support and replace all CSS usage ([013e22a](https://github.com/MK-IT/nextjs-starter-essentials/commit/013e22a3c0b5dba34a80e69427bea457d6d0343c))
+
+
+### Chores
+
+* **deps:** bump next from 11.1.0 to 11.1.1 ([af3cf93](https://github.com/MK-IT/nextjs-starter-essentials/commit/af3cf9352d777d5d00c4e8a3a7f91fe4db1d37c6))
+
 ## 0.1.0 (2021-09-17)
 
 
