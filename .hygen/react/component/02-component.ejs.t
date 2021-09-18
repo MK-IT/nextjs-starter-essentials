@@ -8,10 +8,10 @@ to: "<%= options.indexOf('component') !== -1 ? `src/components/${Name}/${Name}.t
 import React from "react";
 import type { FC } from "react";
 <%if (hasStyles && hasInterface) { %>
-import styles from "./<%= Name %>.module.css";
+import styles from "./<%= Name %>.module.scss";
 import { <%= Name %>Props } from "./<%= Name %>.props";
 <% } else if (hasStyles) { %>
-import styles from "./<%= Name %>.module.css";
+import styles from "./<%= Name %>.module.scss";
 <% } else if (hasInterface) { %>
 import { <%= Name %>Props } from "./<%= Name %>.props";
 <% } -%>

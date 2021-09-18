@@ -42,9 +42,9 @@ module.exports = [
       },
       {
         name: "styles",
-        message: "Styles (CSS module)",
+        message: "Styles (Sass module)",
         value: true,
-        hint: "(<Component>.modules.css)",
+        hint: "(<Component>.modules.scss)",
       },
       {
         name: "tests",

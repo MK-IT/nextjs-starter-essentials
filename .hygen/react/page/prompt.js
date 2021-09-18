@@ -34,9 +34,9 @@ module.exports = [
       },
       {
         name: "styles",
-        message: "Styles (CSS module)",
+        message: "Styles (Sass module)",
         value: true,
-        hint: "(<page>.modules.css)",
+        hint: "(<page>.modules.scss)",
       },
       {
         name: "tests",

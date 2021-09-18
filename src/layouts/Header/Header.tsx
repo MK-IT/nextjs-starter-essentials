@@ -2,7 +2,7 @@ import React from "react";
 import type { FC } from "react";
 import Link from "next/link";
 
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header: FC = () => (
   <header className={styles.header}>

@@ -2,7 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import styles from "@styles/pages/Home.module.css";
+import styles from "@styles/pages/Home.module.scss";
 
 const Home: NextPage = () => (
   <div className={styles.container}>

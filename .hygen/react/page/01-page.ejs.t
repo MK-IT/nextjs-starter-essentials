@@ -8,7 +8,7 @@ import React from "react";
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 <%if (hasStyles) { %>
-import styles from "@styles/pages/<%= h.changeCase.pascalCase(name) %>.module.css";
+import styles from "@styles/pages/<%= h.changeCase.pascalCase(name) %>.module.scss";
 <% } %>
 
 const <%= h.changeCase.pascalCase(name) %>: NextPage = () => {

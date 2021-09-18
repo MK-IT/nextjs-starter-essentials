@@ -1,7 +1,7 @@
 ls:
   src/components:
     .dir: PascalCase | lowercase
-    .module.css: PascalCase
+    .module.scss: PascalCase
     .props.tsx: PascalCase
     .tsx: PascalCase | lowercase
   src/hooks:
@@ -9,7 +9,7 @@ ls:
     .tsx: camelCase | lowercase
   src/layouts:
     .dir: PascalCase | lowercase
-    .module.css: PascalCase
+    .module.scss: PascalCase
     .props.tsx: PascalCase
     .tsx: PascalCase | lowercase
   src/pages:
@@ -18,5 +18,5 @@ ls:
   src/styles:
     .dir: kebab-case | lowercase
     .tsx: kebab-case | lowercase
-    .module.css: PascalCase
-    .css: kebab-case | lowercase
+    .module.scss: PascalCase
+    .scss: kebab-case | lowercase

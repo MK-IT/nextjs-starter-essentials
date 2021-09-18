@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 
 import defaultSEOProps from "@root/next-seo.config";
-import "@styles/globals.css";
+import "@styles/globals.scss";
 import Page from "@layouts/Page";
 
 function App({ Component, pageProps }: AppProps) {
