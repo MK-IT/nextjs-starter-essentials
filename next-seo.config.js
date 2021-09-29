@@ -5,7 +5,34 @@ const defaultSEOProps = {
   titleTemplate: "NextJS Starter | %s",
   defaultTitle: "NextJS Starter By MK IT",
   description: "NextJS starter bundled with essential tools",
-  additionalMetaTags: [],
+  canonical: "https://github.com/MK-IT/nextjs-starter-essentials",
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content: "NextJS, starter, template, project, MK IT",
+    },
+    // PWA meta tags
+    {
+      name: "application-name",
+      content: "NextJS Starter",
+    },
+    {
+      name: "apple-mobile-web-app-title",
+      content: "NextJS Starter",
+    },
+    {
+      name: "apple-mobile-web-app-capable",
+      content: "yes",
+    },
+    {
+      name: "apple-mobile-web-app-status-bar-style",
+      content: "black-translucent",
+    },
+    {
+      name: "theme-color",
+      content: "#6927ff",
+    },
+  ],
   additionalLinkTags: [
     {
       rel: "icon",
