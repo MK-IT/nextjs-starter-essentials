@@ -1,11 +1,11 @@
 ls:
   src/components:
-    .dir: PascalCase | lowercase
+    .dir: PascalCase | lowercase # lowercase allows `components/` folder naming itself
     .module.scss: PascalCase
     .props.tsx: PascalCase
-    .tsx: PascalCase | lowercase
+    .tsx: PascalCase | lowercase # lowercase allows `index.ts{x}` files
   src/hooks:
-    .dir: camelCase | lowercase
+    .dir: camelCase
     .tsx: camelCase | lowercase
   src/layouts:
     .dir: PascalCase | lowercase
@@ -13,10 +13,15 @@ ls:
     .props.tsx: PascalCase
     .tsx: PascalCase | lowercase
   src/pages:
-    .dir: kebab-case | lowercase
-    .tsx: kebab-case | lowercase
+    .dir: kebab-case
+    .tsx: kebab-case
   src/styles:
-    .dir: kebab-case | lowercase
-    .tsx: kebab-case | lowercase
+    .dir: kebab-case
     .module.scss: PascalCase
-    .scss: kebab-case | lowercase
+    .scss: kebab-case
+  src/utils:
+    .dir: camelCase
+    .tsx: camelCase | lowercase
+
+ignore:
+  - src/pages/_app.tsx
