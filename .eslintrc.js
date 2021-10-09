@@ -13,5 +13,6 @@ module.exports = {
   ignorePatterns: [".eslintrc.js", "next.config.js", "next-sitemap.config.js"],
   rules: {
     "react/jsx-props-no-spreading": "warn",
+    "react/require-default-props": "off",
   },
 };
