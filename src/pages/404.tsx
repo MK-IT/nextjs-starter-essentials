@@ -1,14 +1,22 @@
 import React from "react";
 import Link from "next/link";
-import { NextSeo } from "next-seo";
 
 import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/Page";
+import Seo from "@layouts/Seo";
 import styles from "@styles/pages/NotFound.module.scss";
 
 const NotFound: NextPageWithLayout = () => (
   <>
-    <NextSeo title="Page Not Found" />
+    <Seo
+      title="Page Not Found"
+      description="[404] Page Not Found Error"
+      keywords={["NextJS", "MK IT", "Starter", "Boilerplate"]}
+      image={{
+        alt: "NextJS Starter Essentials",
+        url: "/images/default-social-image.png",
+      }}
+    />
 
     <div className={styles.NotFound}>
       <div className={styles.NotFound__Body}>
