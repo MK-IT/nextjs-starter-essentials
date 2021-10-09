@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
+import type { NextPageWithLayout } from "@pages/_app";
+import Page from "@layouts/Page";
 import styles from "@styles/pages/NotFound.module.scss";
 
-const NotFound: NextPage = () => (
+const NotFound: NextPageWithLayout = () => (
   <>
     <NextSeo title="Page Not Found" />
+
     <div className={styles.NotFound}>
       <div className={styles.NotFound__Body}>
         <h1 className={styles.NotFound__Title}>404</h1>
@@ -21,5 +23,7 @@ const NotFound: NextPage = () => (
     </div>
   </>
 );
+
+NotFound.getLayout = (page) => <Page>{page}</Page>;
 
 export default NotFound;

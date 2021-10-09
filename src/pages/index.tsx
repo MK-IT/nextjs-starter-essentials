@@ -1,10 +1,11 @@
 import React from "react";
-import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
+import type { NextPageWithLayout } from "@pages/_app";
+import Page from "@layouts/Page";
 import styles from "@styles/pages/Home.module.scss";
 
-const Home: NextPage = () => (
+const Home: NextPageWithLayout = () => (
   <>
     <NextSeo title="Home" />
 
@@ -55,5 +56,7 @@ const Home: NextPage = () => (
     </div>
   </>
 );
+
+Home.getLayout = (page) => <Page>{page}</Page>;
 
 export default Home;
