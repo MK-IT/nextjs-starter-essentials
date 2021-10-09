@@ -6,15 +6,21 @@ to: "<%= options.indexOf('page') !== -1 ? `src/pages/${name}.tsx` : null %>"
 %>
 import React from "react";
 import type { NextPage } from "next";
-import { NextSeo } from "next-seo";
-<%if (hasStyles) { %>
+
+import Seo from "@layouts/Seo";
+<%if (hasStyles) { -%>
 import styles from "@styles/pages/<%= h.changeCase.pascalCase(name) %>.module.scss";
 <% } %>
 
 const <%= h.changeCase.pascalCase(name) %>: NextPage = () => {
   return (
     <>
-      <NextSeo title="<%= h.changeCase.sentenceCase(name) %>" />
+      <Seo
+        title="<%= h.changeCase.sentenceCase(name) %>"
+        description="Sample SEO description for the `<%= h.changeCase.sentenceCase(name) %>` page"
+        keywords="sample, SEO, keywords"
+        image={{ url: "/images/default-social-image.png", alt: "Default Social Image" }}
+      />
       <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.camelCase(name)}\}` : null)%>><pre>/<%= name %></pre> page</div>
     </>
   );
