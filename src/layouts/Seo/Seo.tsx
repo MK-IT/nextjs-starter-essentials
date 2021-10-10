@@ -5,6 +5,10 @@ import type { FC } from "react";
 import type { NextRouter } from "next/router";
 import type { NextSeoProps } from "next-seo";
 
+import defaultSeo from "@root/next-seo.config";
+
+type Keywords = string | string[];
+
 type Image = {
   url: string;
   alt: string;
@@ -13,8 +17,15 @@ type Image = {
 interface SeoProps extends NextSeoProps {
   title: string;
   description: string;
-  keywords: string | string[];
+  keywords: Keywords;
   image: Image;
+}
+
+function buildKeywords(keywords: Keywords) {
+  return {
+    name: "keywords",
+    content: Array.isArray(keywords) ? keywords.join() : keywords,
+  };
 }
 
 function buildCanonicalUrl(router: NextRouter) {
@@ -24,7 +35,15 @@ function buildCanonicalUrl(router: NextRouter) {
     path.indexOf("#") > 0 ? path.indexOf("#") : path.length,
   ]);
 
-  return process.env.SITE_URL + path.substring(0, pathSliceLength);
+  return process.env.NEXT_PUBLIC_SITE_URL + path.substring(0, pathSliceLength);
+}
+
+function buildImage(image: Image) {
+  return {
+    ...image,
+    width: 1024,
+    height: 512,
+  };
 }
 
 const Seo: FC<SeoProps> = ({
@@ -41,20 +60,15 @@ const Seo: FC<SeoProps> = ({
       title={title}
       description={description}
       additionalMetaTags={[
-        {
-          name: "keywords",
-          content: Array.isArray(keywords) ? keywords.join() : keywords,
-        },
+        // @ts-ignore
+        ...defaultSeo.additionalMetaTags,
+        buildKeywords(keywords),
       ]}
       canonical={buildCanonicalUrl(router)}
       openGraph={{
-        images: [
-          {
-            ...image,
-            width: 1024,
-            height: 512,
-          },
-        ],
+        ...defaultSeo.openGraph,
+        // @ts-ignore
+        images: [...defaultSeo.openGraph?.images, buildImage(image)],
       }}
       {...nextSeoProps} // eslint-disable-line
     />
