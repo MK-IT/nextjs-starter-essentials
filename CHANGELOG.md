@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/MK-IT/nextjs-starter-essentials/compare/v0.1.1...v0.1.2) (2021-10-26)
+
+
+### Features
+
+* add auto-hide as recommended VSC extension and move sidebar to the right per default ([37fc9ec](https://github.com/MK-IT/nextjs-starter-essentials/commit/37fc9ec6d8a5a338710c1a2abc91f150b063b801))
+* add Hygen generator for `utils/` ([ae9bb71](https://github.com/MK-IT/nextjs-starter-essentials/commit/ae9bb710a5718451c4e9ea0a2c20db1a72028247))
+* add missing default SEO props for PWA support ([4b59de3](https://github.com/MK-IT/nextjs-starter-essentials/commit/4b59de3009d1fdfc07c71cdccf8cfa1b1b238248))
+* add support for automated robots.txt and sitemap.xml generation ([a8789d7](https://github.com/MK-IT/nextjs-starter-essentials/commit/a8789d7a3e3dbe62ad9986733a758ead9c8df6d1))
+* add support for per-page layout wrapping component ([74e0a97](https://github.com/MK-IT/nextjs-starter-essentials/commit/74e0a97b81be34c4ab8f975cdc84617bf42847f5))
+* implement 404 page stub and styles ([ead4047](https://github.com/MK-IT/nextjs-starter-essentials/commit/ead404770dc4f56387ab03e8480a3ce175973266))
+* thin wrapper component SEO over `NextSeo` with stricter required props ([e670dbb](https://github.com/MK-IT/nextjs-starter-essentials/commit/e670dbb4385e4d74efd27f84bb6f89c2c0bbd69d))
+
+
+### Bug Fixes
+
+* disable needless ESLint prop-types rule in favor of TS ([ccbffb4](https://github.com/MK-IT/nextjs-starter-essentials/commit/ccbffb4adcce246773d6aa66d0c33115ee3c5b65))
+* do not auto add lastmod prop to sitemap elements ([a0e7774](https://github.com/MK-IT/nextjs-starter-essentials/commit/a0e777496a4f3d97546ed46305fe2580ae9752d6))
+* fix: switch to Seo component in pages instead of vendor NextSeo ([2dc4242](https://github.com/MK-IT/nextjs-starter-essentials/commit/2dc42427e4b15c786ddc50f2a66d084cf9d84f3f))
+* incorrect `.js` type hint comments ([87104ee](https://github.com/MK-IT/nextjs-starter-essentials/commit/87104ee503a737b7d3e4d5ef839a743a71b4ea22))
+* incorrect naming of SEO component ([47918df](https://github.com/MK-IT/nextjs-starter-essentials/commit/47918df72171adcaceefd17aa892c8da5ecd48ab))
+* merge default with per-page SEO props instead of replacing ([67de7d7](https://github.com/MK-IT/nextjs-starter-essentials/commit/67de7d7b7c2da9ced8144e722136164651dc41dd))
+* remove pointless rules from the filesystem lint config ([e3793c5](https://github.com/MK-IT/nextjs-starter-essentials/commit/e3793c5990b306e123fd186190d5ccebb070194a))
+
+
+### Chores
+
+* upgrade packages to latest without ESLint and its peers ([f3f1187](https://github.com/MK-IT/nextjs-starter-essentials/commit/f3f1187f88aa56bd101887aafd61f9e461ca0bed))
+
+
+### Refactor
+
+* change pre-commit Git hook to pre-push ([e23044f](https://github.com/MK-IT/nextjs-starter-essentials/commit/e23044f30f8c9f5206e48f6f2a87da8caf491382))
+* misc changes to env secrets an sitemap generation ([e092c34](https://github.com/MK-IT/nextjs-starter-essentials/commit/e092c3471b811aab534698f87c9fed1df06b635f))
+* styles to follow PascalCase BEM and Sass ([ac51dea](https://github.com/MK-IT/nextjs-starter-essentials/commit/ac51dea226ad40c6328066ee4a78ee14d2736a7b))
+
+
+### Docs
+
+* add README.md ([5458e66](https://github.com/MK-IT/nextjs-starter-essentials/commit/5458e66ed103552f1142a2db0e02feaee3db5377))
+
 ### [0.1.1](https://github.com/MK-IT/nextjs-starter-essentials/compare/v0.1.0...v0.1.1) (2021-09-18)
 
 
