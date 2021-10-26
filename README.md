@@ -1,34 +1,221 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://nextjs.org">
+    <img alt="NextJS" src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  NextJS Starter Essentials
+</h1>
 
-## Getting Started
+[NextJS](https://nextjs.org) project starter extended with tools to help you boost your development experience.
 
-First, run the development server:
+_Help us improve by [submitting suggestions and bug reports](https://github.com/MK-IT/nextjs-starter-essentials/issues)._
+
+## 🚀 Getting Started
+
+1.  **Create a NextJS app.**
+
+    Clone this repository.
+
+    ```
+    git clone https://github.com/MK-IT/nextjs-starter-essentials hello-world
+    ```
+
+    Navigate to your new app and install its dependencies.
+
+    ```
+    # replace `yarn` with `npm` if it works better for you
+    cd hello-world && yarn
+    ```
+
+    Re-initialize Git and make an initial commit skipping pre-commit hooks.
+
+    ```
+    rm -rf .git && git init && git add . && git commit -m "chore: initial commit" --no-verify
+    ```
+
+2.  **Configure.**
+
+    Edit the default configuration of your new app if necessary.
+
+    * `package.json`
+    * `.env`
+    * `next-seo.config.js`
+    * `next-sitemap.config.js`
+
+3.  **Develop..**
+
+    Start the NextJS app in development mode.
+
+    ```
+    yarn dev
+    ```
+
+    _Note: You can change the contents of `src/` in any way you like. Most pre-defined pages and components are for demo purposes only._
+
+4.  **Open the source code and start editing!**
+
+    Your app is now running at `http://localhost:3000`!
+
+    Open the project in your code editor of choice and edit `src/pages/index.tsx`. Save your changes and the browser will update in real time!
+
+## ⭐ Features
+
+### Main features
+
+- [x] 💪 **Latest TS support**
+- [x] 💎 **ReactJS + NextJS**
+- [x] ⚡️ **ESLint, Prettier, EditorConfig**
+- [x] 🛠 **`.env` configuration**
+- [x] 📂 **Clean folder structure**
+- [x] 🚦 **Pre-commit hooks**
+- [x] 🤝 **Commit message linting**
+- [x] 🧗🏻‍♂️ **Built-in `semver` automation**
+- [x] 🐛 **VSCode configuration**
+- [x] 🚀 **Production ready**
+
+### Extra features
+
+- [x] ♻️ **[Hygen templates](https://www.hygen.io/)**
+- [x] 📜 **[Filesystem linter](https://www.npmjs.com/package/@ls-lint/ls-lint)**
+- [x] 🤖 **[Sitemap + Robots.txt](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap)**
+- [x] 🌐 **[SEO + JSON-LD](https://github.com/garmeeh/next-seo)**
+- [x] 👉 **[Aliased imports](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)**
+- [x] 🏋️‍♂️ **[Bundle Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)**
+- [x] ...[per-page layouts](https://nextjs.org/docs/basic-features/layouts#per-page-layouts) and more
+
+### 🛠 `.env` configuration
+
+You can provide environment variables to your app to customize its behavior in different environments. See the guide on [environment variables](https://nextjs.org/docs/basic-features/environment-variables).
+
+### 🤝 Commit message linting
+
+Keep your commit messages human- and robot-readable using a shared convention, i.e. [Commitlint](https://commitlint.js.org/#/).
+
+[Husky's](https://github.com/typicode/husky) Git hooks make sure that your commit messages follow the convention.
+
+_You can use [Commitlint's CLI](https://commitlint.js.org/#/guides-use-prompt?id=guide-use-prompt) for fast authoring of your commit messages._
+
+### :🧗🏻‍♂️: Built-in `semver` automation
+
+The package [standard-version](https://github.com/conventional-changelog/standard-version) helps you generate `CHANGELOG.md`, tag, and bump the version by following the [semver](https://semver.org) convention.
+
+### 👉 Aliased imports (Path Aliases)
+
+The project maps several paths already as recommended in [TypeScript path mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping) docs.
 
 ```bash
-npm run dev
-# or
-yarn dev
+# path aliases can be found in `tsconfig.json`
+@root --> ./*
+@pages --> src/pages/*
+@layouts --> src/layout/*
+@components --> src/components/*
+# ...and more
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```js
+// instead of...
+import MyComponent from '../../../components/MyComponent';
+// you can do...
+import MyComponent from '@components/MyComponent';
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 🏋️‍♂️ Bundle Analyzer
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Under the hood the feature uses [NextJS + Webpack Bundle Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) to visualize the size of your bundle's output files.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The analyzer script (`yarn analyze`) builds the project and generates static HTML reports.
 
-## Learn More
+You can find the generated reports under `next/analyze/`.
 
-To learn more about Next.js, take a look at the following resources:
+## 🧐 What's inside?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 👷‍♂️ Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+# local development
+yarn dev
 
-## Deploy on Vercel
+# production build
+yarn build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# serve production build
+yarn start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# production build with bundle analyzer reporting
+yarn analyze
+
+# debug
+yarn debug
+
+# code generation with Hygen
+yarn gen[:component | page | hook | utils | api]
+
+# format code with Prettier
+yarn format
+
+# lint code with ESLint
+yarn lint
+
+# lint filesystem with ls-lint
+yarn lint:fs
+
+# semver, changelog, and release
+yarn release
+```
+
+### 📂 Folder Structure
+
+```bash
+.
+├── .husky                # VSCode workspace config
+│   ├── commit-msg          # commitlint messages
+│   └── pre-push            # format, lint, and build
+├── .hygen                # Hygen templates
+│   ├── nextjs              # NextJS API templates
+│   └── react               # React templates
+├── .vscode               # VSCode workspace config
+│   ├── extensions.json
+│   ├── launch.json
+│   └── settings.json
+├── src                   # Source code
+│   ├── components          
+│   ├── hooks               
+│   ├── containers          
+│   ├── layout              
+│   ├── pages
+│   ├── styles
+│   ├── types
+│   └── utils          
+├── public                # Static assets
+│   ├── images
+│   ├── robots.txt
+│   └── sitemap.xml
+├── .commitlintrc.js
+├── .editorconfig
+├── .env                  # Default `dotenv` secrets
+├── .eslintrc.js
+├── .gitignore
+├── .ls-lint.yml
+├── .versionrc.js
+├── CHANGELOG.md
+├── LICENSE
+├── next-env.d.ts
+├── next-seo.config.js
+├── next-sitemap.config.js
+├── next.config.js
+├── package.json
+├── README.md
+├── tsconfig.json
+└── yarn.lock
+```
+
+## 💫 Deploy
+
+[NextJS](https://nextjs.org/) apps can be easily deployed to custom Node.js servers, as Docker images, static HTML exports, and [Vercel](https://vercel.com/) (recommended).
+
+For automated Vercel deployment and more on the topic refer to [deployment guide](https://nextjs.org/docs/deployment).
+
+It's highly recommended to build (or even `yarn analyze`) and run your app before deployment as a local preview 
+
+Once ready and assuming your CI/CD is connected to your repository, you can run `yarn release` to trigger a `standard-version` release and follow the prompts 🏁.
