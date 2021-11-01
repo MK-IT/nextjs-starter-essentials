@@ -41,7 +41,7 @@
     "@ls-lint/ls-lint": "^1.10.0",
     "@next/eslint-plugin-next": "^11.1.2",
     "@types/react": "17.0.33",
-    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.29.3",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "18.2.1",
