@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from "react";
+
 import { DefaultSeo } from "next-seo";
 import type { ReactElement, ReactNode } from "react";
 import type { AppProps } from "next/app";
