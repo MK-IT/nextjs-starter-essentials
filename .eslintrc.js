@@ -5,6 +5,7 @@ module.exports = {
     "airbnb-typescript",
     "plugin:@next/next/recommended",
     "prettier",
+    "plugin:react/jsx-runtime",
   ],
   parserOptions: {
     project: "./tsconfig.json",
