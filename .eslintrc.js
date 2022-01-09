@@ -15,5 +15,7 @@ module.exports = {
   rules: {
     "react/jsx-props-no-spreading": "warn",
     "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "no-restricted-exports": ["off", { restrictedNamedExports: ["default"] }],
   },
 };

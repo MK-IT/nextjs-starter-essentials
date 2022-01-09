@@ -1,5 +1,3 @@
-import React from "react";
-
 import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/Page";
 import Seo from "@layouts/Seo";
