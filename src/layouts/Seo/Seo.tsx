@@ -1,4 +1,3 @@
-import React from "react";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import type { FC } from "react";
@@ -68,7 +67,7 @@ const Seo: FC<SeoProps> = ({
       openGraph={{
         ...defaultSeo.openGraph,
         // @ts-ignore
-        images: [...defaultSeo.openGraph?.images, buildImage(image)],
+        images: [...defaultSeo.openGraph?.images, buildImage(image)], // eslint-disable-line
       }}
       {...nextSeoProps} // eslint-disable-line
     />
