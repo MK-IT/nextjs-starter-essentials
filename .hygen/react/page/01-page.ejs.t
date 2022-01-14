@@ -4,8 +4,6 @@ to: "<%= options.indexOf('page') !== -1 ? `src/pages/${name}.tsx` : null %>"
 <%
   var hasStyles = options.indexOf("styles") !== -1;
 %>
-import React from "react";
-
 import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/Page";
 import Seo from "@layouts/Seo";
@@ -13,7 +11,7 @@ import Seo from "@layouts/Seo";
 import styles from "@styles/pages/<%= h.changeCase.pascalCase(name) %>.module.scss";
 <% } %>
 
-const <%= h.changeCase.pascalCase(name) %>: NextPageWithLayout = () => {
+const <%= h.changeCase.pascalCase(name) %>: NextPageWithLayout = function <%= h.changeCase.pascalCase(name) %>() {
   return (
     <>
       <Seo

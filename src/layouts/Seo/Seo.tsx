@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
-import type { FC } from "react";
 import type { NextRouter } from "next/router";
 import type { NextSeoProps } from "next-seo";
 
@@ -45,13 +44,13 @@ function buildImage(image: Image) {
   };
 }
 
-const Seo: FC<SeoProps> = ({
+function Seo({
   title,
   description,
   keywords,
   image,
   ...nextSeoProps
-}) => {
+}: SeoProps) {
   const router = useRouter();
 
   return (
@@ -72,6 +71,6 @@ const Seo: FC<SeoProps> = ({
       {...nextSeoProps} // eslint-disable-line
     />
   );
-};
+}
 
 export default Seo;
