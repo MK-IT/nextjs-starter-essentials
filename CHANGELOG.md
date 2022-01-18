@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v1.0.0...v2.0.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* silence optional chaining for `openGraph={{images}}` ([1d8ae9b](https://github.com/MK-IT/nextjs-starter-essentials/commit/1d8ae9b4a495979210bf01b0f1278c20fd968562))
+
+
+### Chores
+
+* **deps-dev:** bump @types/react from 17.0.27 to 17.0.33 ([1d15028](https://github.com/MK-IT/nextjs-starter-essentials/commit/1d15028563a2c34617575fd95622d796205c3a85))
+* **deps-dev:** bump eslint-plugin-react from 7.25.1 to 7.26.1 ([34ebb9a](https://github.com/MK-IT/nextjs-starter-essentials/commit/34ebb9a0649ca16898dda29f91ae2eb7a6b7825a))
+* **deps-dev:** bump next-sitemap from 1.6.179 to 1.6.192 ([a9c6ded](https://github.com/MK-IT/nextjs-starter-essentials/commit/a9c6ded5fd455c4c8d1a2d39309eda2aa9e111de))
+* **deps-dev:** bump standard-version from 9.3.1 to 9.3.2 ([408f12b](https://github.com/MK-IT/nextjs-starter-essentials/commit/408f12bff3ec172d709b68892a4f7e94dfa67799))
+* **deps:** bump ansi-regex from 5.0.0 to 5.0.1 ([9278361](https://github.com/MK-IT/nextjs-starter-essentials/commit/92783614b8ab1998f61f95d0d95aa0b829ce99f5))
+* extend recommended ESLint plugin `plugin:react/jsx-runtime` ([f18eea0](https://github.com/MK-IT/nextjs-starter-essentials/commit/f18eea064ac5e94501bfeec5d4bb06b5a930404a))
+* update packages ([4194175](https://github.com/MK-IT/nextjs-starter-essentials/commit/419417501ff0df00bc04cebf3d5ba0795be2f8b7))
+
+
+### Refactor
+
+* convert starter to default function declaration components ([3ff2b95](https://github.com/MK-IT/nextjs-starter-essentials/commit/3ff2b956d73669bdd20ce3c65df54a502d828544))
+* prepare for function declaration components usage ([9f71074](https://github.com/MK-IT/nextjs-starter-essentials/commit/9f71074efa85b9c91555c457d504ee0843c6720e))
+
 ## [1.0.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v0.1.2...v1.0.0) (2021-10-26)
 
 ### [0.1.2](https://github.com/MK-IT/nextjs-starter-essentials/compare/v0.1.1...v0.1.2) (2021-10-26)
