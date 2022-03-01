@@ -59,7 +59,7 @@
     "next-sitemap": "^1.6.261",
     "prettier": "^2.5.1",
     "standard-version": "^9.3.2",
-    "typescript": "4.5.4"
+    "typescript": "4.6.2"
   },
   "author": "MK IT Ltd. <hi@mkit.io>",
   "homepage": "https://github.com/MK-IT/nextjs-starter-essentials",
