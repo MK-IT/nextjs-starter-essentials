@@ -18,7 +18,7 @@
   },
 
   // Move Sidebar to the right-hand side
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
 
   // Enable running npm scripts from the Explorer menu
   "npm.enableRunFromFolder": true,

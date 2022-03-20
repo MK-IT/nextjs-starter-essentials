@@ -66,6 +66,7 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 - [x] 💪 **Latest TS support**
 - [x] 💎 **ReactJS + NextJS**
 - [x] ⚡️ **ESLint, Prettier, EditorConfig**
+- [x] 🧪 **Jest + React Testing Library**
 - [x] 🛠 **`.env` configuration**
 - [x] 📂 **Clean folder structure**
 - [x] 🚦 **Pre-commit hooks**
