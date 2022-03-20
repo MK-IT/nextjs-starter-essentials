@@ -6,14 +6,14 @@ module.exports = [
     type: "input",
     name: "name",
     message: "Choose a name",
-    hint: "(Use <camelCase>, e.g. useMyHook)",
+    hint: "(Use <param-case>, e.g. use-my-hook)",
     validate: (input) => {
       if (!input) {
         return "Name cannot be empty!";
       }
 
       if (!input.startsWith("use")) {
-        return "Name should start with `use*` and follow the camelCase casing convention";
+        return "Name should start with `use*` and follow the param-case casing convention";
       }
 
       return true;
@@ -36,13 +36,13 @@ module.exports = [
         name: "hook",
         message: "Hook (React)",
         value: true,
-        hint: "(<useMyHook>.tsx)",
+        hint: "(<use-my-hook>.tsx)",
       },
       {
         name: "tests",
         message: "Tests (no-op, not supported yet)",
         value: true,
-        hint: "(<useMyHook>.test.tsx)",
+        hint: "(<use-my-hook>.test.tsx)",
       },
     ],
   },
