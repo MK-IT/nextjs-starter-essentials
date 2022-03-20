@@ -2,7 +2,7 @@
 
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOProps = {
-  titleTemplate: "NextJS Starter | %s",
+  titleTemplate: "%s | NextJS Starter",
   defaultTitle: "NextJS Starter By MK IT",
   description: "NextJS starter bundled with essential tools",
   canonical: "https://github.com/MK-IT/nextjs-starter-essentials",
