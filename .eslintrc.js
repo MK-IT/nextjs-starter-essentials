@@ -23,6 +23,7 @@ module.exports = {
   ignorePatterns: [
     ".eslintrc.js",
     "jest.config.js",
+    "jest.setup.js",
     "next.config.js",
     "next-sitemap.config.js",
   ],
