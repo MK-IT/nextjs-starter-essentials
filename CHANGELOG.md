@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.1.0...v2.2.0) (2022-03-20)
+
+
+### Features
+
+* use kebab-case for all files ([8d6d6cb](https://github.com/MK-IT/nextjs-starter-essentials/commit/8d6d6cbfdacffea2ec37e9d689c088c9ce26223d))
+* use kebab-case for all hooks ([5a7dfc1](https://github.com/MK-IT/nextjs-starter-essentials/commit/5a7dfc1c047218000efd6f62d21ffbed01b6f5c4))
+* use kebab-case for all pages ([2b8c354](https://github.com/MK-IT/nextjs-starter-essentials/commit/2b8c3549ca4dcb40917e1bac7b44615a71a4dfa9))
+* use kebab-case for all utils ([a23116a](https://github.com/MK-IT/nextjs-starter-essentials/commit/a23116a19e93b7a4b09ae0456cfb0d1858452e0b))
+
+
+### Docs
+
+* add testing as a feature to README.md ([6d1ff46](https://github.com/MK-IT/nextjs-starter-essentials/commit/6d1ff46903abedacd1042a4d17283fe008edc1f4))
+* update README.md ([a1a5ddc](https://github.com/MK-IT/nextjs-starter-essentials/commit/a1a5ddc995437f2b73d6e82097ae11d0fad3bd9a))
+
+
+### Chores
+
+* add words to spelling dictionary ([9e398c0](https://github.com/MK-IT/nextjs-starter-essentials/commit/9e398c083c447c93fe5dd396dc425c85fca3cf81))
+* remove needless Hygen react generator help ([6b62bca](https://github.com/MK-IT/nextjs-starter-essentials/commit/6b62bca7b04e4e84bdccef1ae4d29b32f567ab11))
+
+
+### Refactor
+
+* update all naming helpers used in the Hygen templates ([409d1cf](https://github.com/MK-IT/nextjs-starter-essentials/commit/409d1cfe4326e7abfbb6cafdd6612144d2ac301b))
+
 ## [2.1.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.0.0...v2.1.0) (2022-03-20)
 
 
