@@ -116,9 +116,9 @@ The project maps several paths already as recommended in [TypeScript path mappin
 
 ```js
 // instead of...
-import MyComponent from '../../../components/MyComponent';
+import MyComponent from '../../../components/my-component';
 // you can do...
-import MyComponent from '@components/MyComponent';
+import MyComponent from '@components/my-component';
 ```
 
 ### 🏋️‍♂️ Bundle Analyzer
@@ -148,6 +148,9 @@ yarn analyze
 
 # debug
 yarn debug
+
+# test
+yarn test
 
 # code generation with Hygen
 yarn gen[:component | page | hook | utils | api]
@@ -200,6 +203,8 @@ yarn release
 ├── .ls-lint.yml
 ├── .versionrc.js
 ├── CHANGELOG.md
+├── jest.config.js
+├── jest.setup.js
 ├── LICENSE
 ├── next-env.d.ts
 ├── next-seo.config.js
