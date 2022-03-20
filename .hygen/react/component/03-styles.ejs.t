@@ -1,6 +1,6 @@
 ---
-to: "<%= options.indexOf('styles') !== -1 ? `src/components/${Name}/${Name}.module.scss` : null %>"
+to: "<%= options.indexOf('styles') !== -1 ? `src/components/${h.changeCase.paramCase(Name)}/${h.changeCase.paramCase(Name)}.module.scss` : null %>"
 ---
-.<%= h.changeCase.camelCase(name) %> {
+.<%= h.changeCase.pascal(name) %> {
   background: "red";
 }

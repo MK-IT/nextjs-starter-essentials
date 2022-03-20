@@ -1,27 +1,27 @@
 ---
-to: "<%= options.indexOf('component') !== -1 ? `src/components/${Name}/${Name}.tsx` : null %>"
+to: "<%= options.indexOf('component') !== -1 ? `src/components/${h.changeCase.paramCase(Name)}/${h.changeCase.paramCase(Name)}.tsx` : null %>"
 ---
 <%
   var hasStyles = options.indexOf("styles") !== -1;
   var hasInterface = options.indexOf("interface") !== -1;
 %>
 <%if (hasStyles && hasInterface) { %>
-import styles from "./<%= Name %>.module.scss";
-import { <%= Name %>Props } from "./<%= Name %>.props";
+import styles from "./<%= h.changeCase.paramCase(Name) %>.module.scss";
+import { <%= h.changeCase.pascal(Name) %>Props } from "./<%= h.changeCase.paramCase(Name) %>.props";
 <% } else if (hasStyles) { %>
-import styles from "./<%= Name %>.module.scss";
+import styles from "./<%= h.changeCase.paramCase(Name) %>.module.scss";
 <% } else if (hasInterface) { %>
-import { <%= Name %>Props } from "./<%= Name %>.props";
+import { <%= h.changeCase.pascal(Name) %>Props } from "./<%= h.changeCase.paramCase(Name) %>.props";
 <% } -%>
 
-function <%= Name %>(<%- hasInterface ? "{children, text}:" + `${Name}Props` : null %>) {
+function <%= h.changeCase.pascal(Name) %>(<%- hasInterface ? "{children, text}:" + `${h.changeCase.pascal(Name)}Props` : null %>) {
   return (
-    <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.camelCase(name)}\}` : null)%>>
-      <h1><%= Name %></h1>
+    <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.pascal(Name)}\}` : null)%>>
+      <h1><%= h.changeCase.pascal(Name) %></h1>
       <%- hasInterface ? `<p>{text}</p>` : null %>
       <%- hasInterface ? `{children}` : null %>
     </div>
   );
 }
 
-export default <%= Name %>;
+export default <%= h.changeCase.pascal(Name) %>;

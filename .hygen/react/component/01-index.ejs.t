@@ -1,6 +1,6 @@
 ---
-to: "<%= options.indexOf('index') !== -1 ? `src/components/${Name}/index.tsx` : null %>"
+to: "<%= options.indexOf('index') !== -1 ? `src/components/${h.changeCase.paramCase(Name)}/index.tsx` : null %>"
 ---
-import <%= Name %> from './<%= Name %>';
+import <%= h.changeCase.pascal(Name) %> from './<%= h.changeCase.paramCase(Name) %>';
 
-export default <%= Name %>;
+export default <%= h.changeCase.pascal(Name) %>;

@@ -1,7 +1,7 @@
 import type { NextPageWithLayout } from "@pages/_app";
-import Page from "@layouts/Page";
-import Seo from "@layouts/Seo";
-import styles from "@styles/pages/Home.module.scss";
+import Page from "@layouts/page";
+import Seo from "@layouts/seo";
+import styles from "@styles/pages/home.module.scss";
 
 const Home: NextPageWithLayout = function Home() {
   return (

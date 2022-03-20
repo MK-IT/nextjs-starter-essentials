@@ -1,3 +1,3 @@
-import Seo from "./Seo";
+import Seo from "./seo";
 
 export default Seo;

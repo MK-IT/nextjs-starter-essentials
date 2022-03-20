@@ -6,7 +6,7 @@ module.exports = [
     type: "input",
     name: "name",
     message: "Choose a name",
-    hint: "(Use <PascalCase>, e.g. MyComponent)",
+    hint: "(Use <param-case>, e.g. my-component)",
     validate: (input) => {
       if (!input) {
         return "Name cannot be empty!";
@@ -32,25 +32,25 @@ module.exports = [
         name: "component",
         message: "Component (React)",
         value: true,
-        hint: "(<Component>.tsx)",
+        hint: "(<my-component>.tsx)",
       },
       {
         name: "interface",
         message: "Interface (props)",
         value: true,
-        hint: "(<Component>.props.tsx)",
+        hint: "(<my-component>.props.tsx)",
       },
       {
         name: "styles",
         message: "Styles (Sass module)",
         value: true,
-        hint: "(<Component>.modules.scss)",
+        hint: "(<my-component>.modules.scss)",
       },
       {
         name: "tests",
         message: "Tests (no-op, not supported yet)",
         value: true,
-        hint: "(<Component>.test.tsx)",
+        hint: "(<my-component>.test.tsx)",
       },
     ],
   },

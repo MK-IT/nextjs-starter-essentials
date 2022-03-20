@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 import type { NextPageWithLayout } from "@pages/_app";
-import Page from "@layouts/Page";
-import Seo from "@layouts/Seo";
-import styles from "@styles/pages/NotFound.module.scss";
+import Page from "@layouts/page";
+import Seo from "@layouts/seo";
+import styles from "@styles/pages/not-found.module.scss";
 
 const NotFound: NextPageWithLayout = function NotFound() {
   return (
