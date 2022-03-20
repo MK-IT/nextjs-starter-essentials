@@ -28,12 +28,17 @@ function buildKeywords(keywords: Keywords) {
 
 function buildCanonicalUrl(router: NextRouter) {
   const path = router?.asPath;
+
+  if (!path) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+
   const pathSliceLength = Math.min.apply(Math, [
     path.indexOf("?") > 0 ? path.indexOf("?") : path.length,
     path.indexOf("#") > 0 ? path.indexOf("#") : path.length,
   ]);
-
-  return process.env.NEXT_PUBLIC_SITE_URL + path.substring(0, pathSliceLength);
+  const pathSlice = path.substring(0, pathSliceLength);
+  return process.env.NEXT_PUBLIC_SITE_URL + pathSlice;
 }
 
 function buildImage(image: Image) {
