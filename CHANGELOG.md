@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.2.0...v2.2.1) (2022-03-20)
+
+
+### Bug Fixes
+
+* incorrect folder and file casing on Mac OS ([e2500e8](https://github.com/MK-IT/nextjs-starter-essentials/commit/e2500e8bc0044c3f50d9cdd5b79f3ba5cb54eecd))
+* incorrect folder and file casing on Mac OS ([40caa0a](https://github.com/MK-IT/nextjs-starter-essentials/commit/40caa0a73fc2e8f11d6154a220c7d09034247d46))
+* page title name to come first ([2c2cf40](https://github.com/MK-IT/nextjs-starter-essentials/commit/2c2cf40a65a6d2bc94091510efe780a83a1f127d))
+
 ## [2.2.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.1.0...v2.2.0) (2022-03-20)
 
 
