@@ -1,6 +1,6 @@
 ---
-to: "<%= options.indexOf('index') !== -1 ? `src/utils/${name}/index.tsx` : null %>"
+to: "<%= options.indexOf('index') !== -1 ? `src/utils/${h.changeCase.paramCase(Name)}/index.tsx` : null %>"
 ---
-import <%= name %> from './<%= name %>';
+import <%= h.changeCase.camel(Name) %> from './<%= h.changeCase.paramCase(Name) %>';
 
-export default <%= name %>;
+export default <%= h.changeCase.camel(Name) %>;

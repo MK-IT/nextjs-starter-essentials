@@ -1,8 +1,8 @@
 ---
-to: "<%= options.indexOf('utils') !== -1 ? `src/utils/${name}/${name}.tsx` : null %>"
+to: "<%= options.indexOf('utils') !== -1 ? `src/utils/${h.changeCase.paramCase(Name)}/${h.changeCase.paramCase(Name)}.tsx` : null %>"
 ---
-function <%= h.changeCase.camelCase(name) %>(a: number, b: number) {
+function <%= h.changeCase.camel(name) %>(a: number, b: number) {
   return a + b;
 };
 
-export default <%= h.changeCase.camelCase(name) %>;
+export default <%= h.changeCase.camel(name) %>;

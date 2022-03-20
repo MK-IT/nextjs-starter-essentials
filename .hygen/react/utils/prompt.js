@@ -6,7 +6,7 @@ module.exports = [
     type: "input",
     name: "name",
     message: "Choose a name",
-    hint: "(Use <camelCase>, e.g. dateUtils)",
+    hint: "(Use <kebab-case>, e.g. date-utils)",
     validate: (input) => {
       if (!input) {
         return "Name cannot be empty!";
@@ -32,13 +32,13 @@ module.exports = [
         name: "utils",
         message: "Utility",
         value: true,
-        hint: "(<dateUtils>.tsx)",
+        hint: "(<date-utils>.tsx)",
       },
       {
         name: "tests",
         message: "Tests (no-op, not supported yet)",
         value: true,
-        hint: "(<dateUtils>.test.tsx)",
+        hint: "(<date-utils>.test.tsx)",
       },
     ],
   },
