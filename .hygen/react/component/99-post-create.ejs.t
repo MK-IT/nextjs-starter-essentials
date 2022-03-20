@@ -1,3 +1,3 @@
 ---
-sh: yarn prettier --write src/components/<%= h.changeCase.paramCase(Name) %>/*
+sh: yarn prettier --write src/components/<%= h.changeCase.param(name) %>/*
 ---

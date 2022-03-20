@@ -1,5 +1,5 @@
 ---
-to: "<%= options.indexOf('hook') !== -1 ? `src/hooks/${h.changeCase.paramCase(Name)}/${h.changeCase.paramCase(Name)}.tsx` : null %>"
+to: "<%= options.indexOf('hook') !== -1 ? `src/hooks/${h.changeCase.param(name)}/${h.changeCase.param(name)}.tsx` : null %>"
 ---
 import { useState } from "react";
 

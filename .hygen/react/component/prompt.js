@@ -6,7 +6,7 @@ module.exports = [
     type: "input",
     name: "name",
     message: "Choose a name",
-    hint: "(Use <param-case>, e.g. my-component)",
+    hint: "(Use <kebab-case>, e.g. my-component)",
     validate: (input) => {
       if (!input) {
         return "Name cannot be empty!";

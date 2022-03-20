@@ -1,3 +1,3 @@
 ---
-sh: yarn prettier --write src/pages/<%= h.changeCase.paramCase(name) %>.tsx
+sh: yarn prettier --write src/pages/<%= h.changeCase.param(name) %>.tsx
 ---

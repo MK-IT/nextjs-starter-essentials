@@ -6,14 +6,14 @@ module.exports = [
     type: "input",
     name: "name",
     message: "Choose a name",
-    hint: "(Use <param-case>, e.g. use-my-hook)",
+    hint: "(Use <kebab-case>, e.g. use-my-hook)",
     validate: (input) => {
       if (!input) {
         return "Name cannot be empty!";
       }
 
       if (!input.startsWith("use")) {
-        return "Name should start with `use*` and follow the param-case casing convention";
+        return "Name should start with `use*` and follow the kebab-case casing convention";
       }
 
       return true;

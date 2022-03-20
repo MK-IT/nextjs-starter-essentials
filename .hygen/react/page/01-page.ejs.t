@@ -1,5 +1,5 @@
 ---
-to: "<%= options.indexOf('page') !== -1 ? `src/pages/${h.changeCase.paramCase(name)}.tsx` : null %>"
+to: "<%= options.indexOf('page') !== -1 ? `src/pages/${h.changeCase.param(name)}.tsx` : null %>"
 ---
 <%
   var hasStyles = options.indexOf("styles") !== -1;
@@ -8,10 +8,10 @@ import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/page";
 import Seo from "@layouts/seo";
 <%if (hasStyles) { -%>
-import styles from "@styles/pages/<%= h.changeCase.paramCase(name) %>.module.scss";
+import styles from "@styles/pages/<%= h.changeCase.param(name) %>.module.scss";
 <% } %>
 
-const <%= h.changeCase.pascalCase(name) %>: NextPageWithLayout = function <%= h.changeCase.pascalCase(name) %>() {
+const <%= h.changeCase.pascal(name) %>: NextPageWithLayout = function <%= h.changeCase.pascal(name) %>() {
   return (
     <>
       <Seo
@@ -26,6 +26,6 @@ const <%= h.changeCase.pascalCase(name) %>: NextPageWithLayout = function <%= h.
   );
 };
 
-<%= h.changeCase.pascalCase(name) %>.getLayout = (page) => <Page>{page}</Page>;
+<%= h.changeCase.pascal(name) %>.getLayout = (page) => <Page>{page}</Page>;
 
-export default <%= h.changeCase.pascalCase(name) %>;
+export default <%= h.changeCase.pascal(name) %>;
