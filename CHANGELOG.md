@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.0.0...v2.1.0) (2022-03-20)
+
+
+### Features
+
+* add automated testing via jest ([a7a3611](https://github.com/MK-IT/nextjs-starter-essentials/commit/a7a3611f56f87d440d3aef06d564dcc3593186de))
+* **tests:** add jest and [@testing-library](https://github.com/testing-library) packages ([2eb8e20](https://github.com/MK-IT/nextjs-starter-essentials/commit/2eb8e20185971fe41ddc45ade247e305a559bf13))
+
+
+### Bug Fixes
+
+* crash if path is undefined in Seo component ([8c64503](https://github.com/MK-IT/nextjs-starter-essentials/commit/8c6450399a57936f65a9a6c6a083972fda004ab9))
+
+
+### Chores
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([6ec8055](https://github.com/MK-IT/nextjs-starter-essentials/commit/6ec8055020b1336c7913ae209eb2177b096e35f5))
+* **deps-dev:** bump eslint from 8.6.0 to 8.7.0 ([18bc028](https://github.com/MK-IT/nextjs-starter-essentials/commit/18bc028e7287f937f0c05832299e53eccd0d32c4))
+* **deps-dev:** bump eslint-config-next from 12.0.7 to 12.0.8 ([4351967](https://github.com/MK-IT/nextjs-starter-essentials/commit/43519675a01c1f47a9f04d158842f7e5f84c22ff))
+* **deps:** bump next from 12.0.7 to 12.0.8 ([b90160c](https://github.com/MK-IT/nextjs-starter-essentials/commit/b90160c86aba0e068e20db8f2a4c7e2cf1ac7631))
+* **deps:** bump sass from 1.47.0 to 1.48.0 ([6e3a593](https://github.com/MK-IT/nextjs-starter-essentials/commit/6e3a593c8088bddba248227421d6026adea33b46))
+* **deps:** bump trim-off-newlines from 1.0.1 to 1.0.3 ([968c236](https://github.com/MK-IT/nextjs-starter-essentials/commit/968c236b4a726e2f3de1a7f30884b0968913a7e8))
+* include new sitemaps under public/ ([f05f02c](https://github.com/MK-IT/nextjs-starter-essentials/commit/f05f02c5cc625dc9aea133d794dc2c11ab2f5d88))
+* misc fixes ([537ad8b](https://github.com/MK-IT/nextjs-starter-essentials/commit/537ad8b734878a93db5cfb949a388c5200197f39))
+* upgrade packages to latest ([4431fe1](https://github.com/MK-IT/nextjs-starter-essentials/commit/4431fe10739a0f039724e47357488460492eec14))
+
 ## [2.0.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v1.0.0...v2.0.0) (2022-01-18)
 
 
