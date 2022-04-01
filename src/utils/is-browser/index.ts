@@ -1,3 +1,3 @@
-import isBrowser from './is-browser';
+import isBrowser from "./is-browser";
 
 export default isBrowser;
