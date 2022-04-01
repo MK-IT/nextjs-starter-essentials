@@ -4,9 +4,10 @@ to: "<%= options.indexOf('page') !== -1 ? `src/pages/${h.changeCase.param(name)}
 <%
   var hasStyles = options.indexOf("styles") !== -1;
 %>
+import { NextSeo } from "next-seo";
+
 import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/page";
-import Seo from "@layouts/seo";
 <%if (hasStyles) { -%>
 import styles from "@styles/pages/<%= h.changeCase.param(name) %>.module.scss";
 <% } %>
@@ -14,11 +15,9 @@ import styles from "@styles/pages/<%= h.changeCase.param(name) %>.module.scss";
 const <%= h.changeCase.pascal(name) %>: NextPageWithLayout = function <%= h.changeCase.pascal(name) %>() {
   return (
     <>
-      <Seo
+      <NextSeo
         title="<%= h.changeCase.sentenceCase(name) %>"
         description="Sample SEO description for the `<%= h.changeCase.sentenceCase(name) %>` page"
-        keywords="sample, SEO, keywords"
-        image={{ url: "/images/default-social-image.png", alt: "Default Social Image" }}
       />
 
       <div<%- (hasStyles ? ` className=\{styles.${h.changeCase.pascal(name)}\}` : null)%>><pre>/<%= name %></pre> page</div>

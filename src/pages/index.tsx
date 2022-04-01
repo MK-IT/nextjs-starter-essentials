@@ -1,19 +1,15 @@
+import { NextSeo } from "next-seo";
+
 import type { NextPageWithLayout } from "@pages/_app";
 import Page from "@layouts/page";
-import Seo from "@layouts/seo";
 import styles from "@styles/pages/home.module.scss";
 
 const Home: NextPageWithLayout = function Home() {
   return (
     <>
-      <Seo
+      <NextSeo
         title="Home"
         description="Sample Home page created with NextJS and using the default layout"
-        keywords={["NextJS", "MK IT", "Starter", "Boilerplate"]}
-        image={{
-          alt: "NextJS Starter Essentials",
-          url: "/images/default-social-image.png",
-        }}
       />
 
       <div className={styles.Home}>
