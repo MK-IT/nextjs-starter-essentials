@@ -1,3 +1,3 @@
 ---
-sh: yarn prettier --write src/pages/api/<%= name %>.ts
+sh: yarn prettier --write src/pages/api/*
 ---
