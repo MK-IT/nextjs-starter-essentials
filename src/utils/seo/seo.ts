@@ -7,9 +7,10 @@ export function buildKeywordsTag(keywords: string | string[]) {
   };
 }
 
-export function buildImageTag(image: { url: string; alt: string }) {
+export function buildImageTag(url: string, alt: string) {
   return {
-    ...image,
+    url,
+    alt,
     width: 1024,
     height: 512,
   };
