@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.2.1...v2.3.0) (2022-04-01)
+
+
+### Features
+
+* add sample unit tests of SEO utility module ([31f21f5](https://github.com/MK-IT/nextjs-starter-essentials/commit/31f21f597ef345228d1b27335d130c301f19ecb8))
+* is-browser utility supporting NodeJS, Browser, and Deno env ([6650e8f](https://github.com/MK-IT/nextjs-starter-essentials/commit/6650e8f46a48c02de54c9635173e722c684a9498))
+
+
+### Bug Fixes
+
+* format all Hygen generated files after creation ([0f67fcd](https://github.com/MK-IT/nextjs-starter-essentials/commit/0f67fcd309dc28435b063b85e2c5c6a426b29e13))
+
+
+### Refactor
+
+* .ts and .tsx usage on all files ([a793997](https://github.com/MK-IT/nextjs-starter-essentials/commit/a7939979c295f6736a00cd38d755e0641ea86cd5))
+* export types and utilities to separate files of SEO ([4390998](https://github.com/MK-IT/nextjs-starter-essentials/commit/4390998e2e75ebb03119d178c76f815eeb7e0dcb))
+* prefer default exports for interfaces and props ([0a8092a](https://github.com/MK-IT/nextjs-starter-essentials/commit/0a8092ae86d5bfee85bec424950bfbdd819ff775))
+* remove the NextSeo component wrapper ([28a6aa6](https://github.com/MK-IT/nextjs-starter-essentials/commit/28a6aa67a7813bb6c2168d3fdb0548d3c6534cba))
+
 ### [2.2.1](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.2.0...v2.2.1) (2022-03-20)
 
 
