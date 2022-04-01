@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.3.0...v2.3.1) (2022-04-01)
+
+
+### Bug Fixes
+
+* index export of SEO utils ([31fa4ba](https://github.com/MK-IT/nextjs-starter-essentials/commit/31fa4ba4cda89d4dfe1d873a9c1cfec63adcebd9))
+
 ## [2.3.0](https://github.com/MK-IT/nextjs-starter-essentials/compare/v2.2.1...v2.3.0) (2022-04-01)
 
 
