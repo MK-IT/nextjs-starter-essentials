@@ -3,7 +3,7 @@ to: "<%= options.indexOf('interface') !== -1 ? `src/components/${h.changeCase.pa
 ---
 import type { ReactNode } from 'react';
 
-export interface <%= h.changeCase.pascal(name) %>Props {
+export default interface <%= h.changeCase.pascal(name) %>Props {
   children: ReactNode;
   text: string;
 }

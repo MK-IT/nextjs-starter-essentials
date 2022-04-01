@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export interface PageProps {
+export default interface PageProps {
   children?: ReactNode;
   hasHeader?: boolean;
   hasFooter?: boolean;
