@@ -15,6 +15,14 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 
 1.  **Create a NextJS app.**
 
+    Straightforward project scaffold using [degit](https://github.com/Rich-Harris/degit).
+
+    ```
+    npx degit https://github.com/MK-IT/nextjs-starter-essentials hello-world
+    ```
+
+    Or alternatively, instead follow the steps below.
+
     Clone this repository.
 
     ```
@@ -32,7 +40,7 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 
     ```
     rm -rf .git && git init && git add . && git commit -m "chore: initial commit" --no-verify
-    ```
+    ```    
 
 2.  **Configure.**
 
