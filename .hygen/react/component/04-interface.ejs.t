@@ -1,5 +1,5 @@
 ---
-to: "<%= options.indexOf('interface') !== -1 ? `src/components/${h.changeCase.param(name)}/${h.changeCase.param(name)}.props.tsx` : null %>"
+to: "<%= options.indexOf('interface') !== -1 ? `src/components/${h.changeCase.param(name)}/${h.changeCase.param(name)}.props.ts` : null %>"
 ---
 import type { ReactNode } from 'react';
 

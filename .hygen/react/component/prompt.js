@@ -26,7 +26,7 @@ module.exports = [
         name: "index",
         message: "Index (re-export)",
         value: true,
-        hint: "(index.tsx)",
+        hint: "(index.ts)",
       },
       {
         name: "component",
@@ -38,7 +38,7 @@ module.exports = [
         name: "interface",
         message: "Interface (props)",
         value: true,
-        hint: "(<my-component>.props.tsx)",
+        hint: "(<my-component>.props.ts)",
       },
       {
         name: "styles",
