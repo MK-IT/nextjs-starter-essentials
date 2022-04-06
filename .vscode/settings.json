@@ -10,6 +10,7 @@
     "multiselect",
     "nextjs",
     "postbuild",
+    "tailwindcss",
     "TMPLS",
     "Vercel",
     "versionrc"
@@ -30,5 +31,12 @@
   "typescript.referencesCodeLens.enabled": true,
 
   // Enable VSC built-in bracket colorization instead of using an extension
-  "editor.bracketPairColorization.enabled": true
+  "editor.bracketPairColorization.enabled": true,
+
+  // Disable warnings in .scss files about unknown @import statements such as @tailwind
+  "scss.lint.unknownAtRules": "ignore"
+  // Alternative solution to disable warnings in .scss files about unknown @import statements such as @tailwind
+  // "files.associations": {
+  //   "*.scss": "postcss"
+  // }
 }

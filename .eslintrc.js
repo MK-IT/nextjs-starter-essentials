@@ -24,6 +24,8 @@ module.exports = {
     ".eslintrc.js",
     "jest.config.js",
     "jest.setup.js",
+    "postcss.config.js",
+    "tailwind.config.js",
     "next.config.js",
     "next-sitemap.config.js",
   ],
