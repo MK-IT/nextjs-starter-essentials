@@ -21,9 +21,7 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
     npx degit https://github.com/MK-IT/nextjs-starter-essentials hello-world
     ```
 
-    Or alternatively, instead follow the steps below.
-
-    Clone this repository.
+    Or alternatively, clone this repository.
 
     ```
     git clone https://github.com/MK-IT/nextjs-starter-essentials hello-world
@@ -82,6 +80,8 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 - [x] 🧗🏻‍♂️ **Built-in `semver` automation**
 - [x] 🐛 **VSCode configuration**
 - [x] 🚀 **Production ready**
+
+*Checkout the `feat/tailwind-css` branch for the same features but with [Tailwind CSS](https://tailwindcss.com/) included.*
 
 ### Extra features
 
