@@ -1,24 +1,30 @@
-import React from 'react';
+import { useState } from "react";
+import "./header.css";
 
-import { Button } from './Button';
-import './header.css';
-
-type User = {
+interface User {
   name: string;
-};
-
-interface HeaderProps {
-  user?: User;
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
+  email: string;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
-  <header>
-    <div className="wrapper">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+export interface HeaderProps {
+  variant: "full" | "burger";
+  user: User;
+}
+
+export default function Header({ variant, user }: HeaderProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen((prev) => !prev);
+
+  return (
+    <header className="wrapper border">
+      <div className="wrapper">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g fill="none" fillRule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -34,23 +40,35 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             />
           </g>
         </svg>
-        <h1>Acme</h1>
+        <h1>Page Title</h1>
       </div>
-      <div>
-        {user ? (
-          <>
+      <div className="wrapper">
+        <div>
+          {user && (
             <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+              Welcome, {user.name} | {user.email}
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
+          )}
+        </div>
+
+        {variant === "burger" && (
+          <button type="button" onClick={toggle}>
+            Menu
+          </button>
         )}
+
+        <div
+          className={
+            variant === "full"
+              ? "nav-links"
+              : `${isOpen ? "open" : "close"} burger`
+          }
+        >
+          <a href="/login">Login</a>
+          <a href="/register">Register</a>
+          <a href="/posts">Posts</a>
+        </div>
       </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+}
