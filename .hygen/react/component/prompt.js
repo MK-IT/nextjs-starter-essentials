@@ -47,6 +47,12 @@ module.exports = [
         hint: "(<my-component>.modules.scss)",
       },
       {
+        name: "stories",
+        message: "Stories (Storybook)",
+        value: true,
+        hint: "(<my-component>.stories.tsx)",
+      },
+      {
         name: "tests",
         message: "Tests (no-op, not supported yet)",
         value: true,
