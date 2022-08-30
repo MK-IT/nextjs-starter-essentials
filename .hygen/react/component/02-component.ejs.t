@@ -7,11 +7,11 @@ to: "<%= options.indexOf('component') !== -1 ? `src/components/${h.changeCase.pa
 %>
 <%if (hasStyles && hasInterface) { %>
 import styles from "./<%= h.changeCase.param(name) %>.module.scss";
-import <%= h.changeCase.pascal(name) %>Props from "./<%= h.changeCase.param(name) %>.props";
+import type <%= h.changeCase.pascal(name) %>Props from "./<%= h.changeCase.param(name) %>.props";
 <% } else if (hasStyles) { %>
 import styles from "./<%= h.changeCase.param(name) %>.module.scss";
 <% } else if (hasInterface) { %>
-import <%= h.changeCase.pascal(name) %>Props from "./<%= h.changeCase.param(name) %>.props";
+import type <%= h.changeCase.pascal(name) %>Props from "./<%= h.changeCase.param(name) %>.props";
 <% } -%>
 
 function <%= h.changeCase.pascal(name) %>(<%- hasInterface ? "{children, text}:" + `${h.changeCase.pascal(name)}Props` : null %>) {
