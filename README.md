@@ -174,6 +174,12 @@ yarn lint:fs
 
 # semver, changelog, and release
 yarn release
+
+# build, test and explore UI components in isolation
+yarn storybook
+
+# build static Storybook site
+yarn storybook:b
 ```
 
 ### 📂 Folder Structure
@@ -182,7 +188,10 @@ yarn release
 .
 ├── .husky                # VSCode workspace config
 │   ├── commit-msg          # commitlint messages
-│   └── pre-push            # format, lint, and build
+│   └── pre-push
+│── .storybook            # Storybook Configuration
+│   ├── main.js
+│   └── preview.js            # format, lint, and build
 ├── .hygen                # Hygen templates
 │   ├── nextjs              # NextJS API templates
 │   └── react               # React templates
