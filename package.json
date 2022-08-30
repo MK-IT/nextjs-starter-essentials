@@ -27,7 +27,9 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "analyze": "ANALYZE=true yarn build",
-    "release": "standard-version"
+    "release": "standard-version",
+    "storybook": "start-storybook -p 6006 -s public",
+    "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^12.1.4",
@@ -38,10 +40,19 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.13",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@ls-lint/ls-lint": "^1.11.0",
     "@next/eslint-plugin-next": "^12.1.0",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -50,6 +61,7 @@
     "@types/react-dom": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.18.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.14.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "16.1.4",
@@ -59,6 +71,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "eslint-plugin-testing-library": "^5.1.0",
     "husky": "^7.0.4",
     "hygen": "^6.2.0",
