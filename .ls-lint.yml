@@ -1,27 +1,43 @@
 ls:
-  src/components:
+  docs:
     .dir: kebab-case
+    .sql: kebab-case
+  src/__tests__:
+    .test.tsx: kebab-case
+    .snapshot.tsx: kebab-case
+    .snapshot.tsx.snap: kebab-case
+  src/{components,features,interfaces,hooks,layouts,styles,utils}:
+    .dir: kebab-case | regex:.*__tests__.* | regex:.*__snapshots__.*
+    .ts: kebab-case
+    .tsx: kebab-case
+    .props.ts: kebab-case
+    .slice.ts: kebab-case
+    .api.ts: kebab-case
+    .selectors.ts: kebab-case
+    .constants.ts: kebab-case
+    .utils.ts: kebab-case
+    .test.ts: kebab-case
+    .test.tsx: kebab-case
+    .stories.tsx: kebab-case
+    .scss: kebab-case
     .module.scss: kebab-case
-    .props.tsx: kebab-case
-    .tsx: kebab-case
-  src/hooks:
-    .dir: kebab-case
-    .tsx: kebab-case
-  src/layouts:
-    .dir: kebab-case
-    .module.scss: kebab-case
-    .props.tsx: kebab-case
-    .tsx: kebab-case
   src/pages:
     .dir: kebab-case
-    .tsx: kebab-case
-  src/styles:
+    .tsx: regex:([a-z0-9-]+) | regex:(\[[a-z0-9-]+\]) # allow NextJS page naming, e.g. [slug].tsx
+  public:
     .dir: kebab-case
-    .module.scss: kebab-case
-    .scss: kebab-case
-  src/utils:
-    .dir: kebab-case
-    .tsx: kebab-case
-
+    .png: kebab-case
+    .jpg: kebab-case
+    .svg: kebab-case
+    .xml: kebab-case
+    .txt: kebab-case
 ignore:
+  - node_modules
+  - .next
+  - .git
+  - .next
+  - .hygen
+  - .husky
+  - .vscode
   - src/pages/_app.tsx
+  - src/pages/_document.tsx
