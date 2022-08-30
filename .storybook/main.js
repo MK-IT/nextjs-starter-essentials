@@ -20,6 +20,7 @@ module.exports = {
   },
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
+    "storybook-addon-next",
     "@storybook/addon-links",
     "@storybook/addon-essentials", // includes the configuration for several addons as well as @storybook/addon-actions
     "@storybook/addon-interactions", // must be after @storybook/addon-actions or @storybook/addon-essentials
