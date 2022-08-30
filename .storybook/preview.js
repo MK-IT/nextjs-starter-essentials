@@ -1,4 +1,5 @@
 import * as NextImage from "next/image";
+import RESPONSIVE_DEVICES from "./responsive-devices";
 
 const OriginalNextImage = NextImage.default;
 
@@ -15,5 +16,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
-
+  viewport: {
+    viewports: RESPONSIVE_DEVICES,
+  },
+};
