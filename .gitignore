@@ -20,6 +20,9 @@ TODO.md
 .DS_Store
 *.pem
 
+# storybook
+storybook-static
+
 # debug
 npm-debug.log*
 yarn-debug.log*
