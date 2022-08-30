@@ -11,8 +11,10 @@
     "nextjs",
     "postbuild",
     "TMPLS",
+    "unoptimized",
     "Vercel",
-    "versionrc"
+    "versionrc",
+    "viewports"
   ],
 
   // Fix all auto-fixable issues reported by ESLint
