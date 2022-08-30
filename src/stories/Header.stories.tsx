@@ -1,25 +1,33 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Story } from "@storybook/react";
 
-import { Header } from './Header';
+import Header, { HeaderProps } from "./Header";
 
 export default {
-  title: 'Example/Header',
+  title: "Example/Header",
   component: Header,
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
-  },
-} as ComponentMeta<typeof Header>;
-
-const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
-
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {
-    name: 'Jane Doe',
-  },
 };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+const Template: Story<HeaderProps> = function Template(args) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  return <Header {...args} />;
+};
+
+export const Full = Template.bind({});
+
+Full.args = {
+  user: {
+    email: "john@doe.com",
+    name: "John Doe",
+  },
+  variant: "full",
+};
+
+export const Compact = Template.bind({});
+
+Compact.args = {
+  user: {
+    email: "john@doe.com",
+    name: "John Doe",
+  },
+  variant: "burger",
+};
