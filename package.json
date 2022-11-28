@@ -32,8 +32,8 @@
     "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^12.2.5",
-    "next": "12.2.5",
+    "@next/bundle-analyzer": "^13.0.5",
+    "next": "13.0.5",
     "next-seo": "^5.14.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -43,7 +43,7 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@ls-lint/ls-lint": "^1.11.2",
-    "@next/eslint-plugin-next": "^12.2.5",
+    "@next/eslint-plugin-next": "^13.0.5",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -65,7 +65,7 @@
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "^12.2.5",
+    "eslint-config-next": "^13.0.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",

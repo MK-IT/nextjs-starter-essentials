@@ -7,9 +7,7 @@ function Header() {
     <header className={styles.Header}>
       <div className={styles.Header__Container}>
         <h2 className={styles.Header__Title}>
-          <Link href="/" passHref>
-            <a href="replace">NextJS Starter Essentials</a>
-          </Link>
+          <Link href="/">NextJS Starter Essentials</Link>
         </h2>
       </div>
     </header>
