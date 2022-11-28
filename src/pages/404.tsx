@@ -17,10 +17,8 @@ const NotFound: NextPageWithLayout = function NotFound() {
         <div className={styles.NotFound__Body}>
           <h1 className={styles.NotFound__Title}>404</h1>
           <h2>This page could not be found</h2>
-          <Link href="/" passHref>
-            <a className={styles.NotFound__Link} href="replace">
-              Back to Home
-            </a>
+          <Link className={styles.NotFound__Link} href="/">
+            Back to Home
           </Link>
         </div>
       </div>
