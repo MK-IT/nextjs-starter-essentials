@@ -45,7 +45,7 @@
     "@ls-lint/ls-lint": "^1.11.2",
     "@next/eslint-plugin-next": "^13.0.5",
     "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.15",
     "@storybook/addon-viewport": "^6.5.13",
