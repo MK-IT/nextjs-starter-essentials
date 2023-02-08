@@ -11,7 +11,18 @@
 
 _Help us improve by [submitting suggestions and bug reports](https://github.com/MK-IT/nextjs-starter-essentials/issues)._
 
-## 🚀 Getting Started
+## Table of Contents
+
+* [Getting Started](#getting-started)
+* [Features](#features)
+  * [Main Features](#main-features)
+  * [Extra Features](#extra-features)
+* [What's Inside](#whats-inside)
+  * [Available Scripts](#available-scripts)
+  * [Folder Structure](#folder-structure)
+* [Deploy](#deploy)
+
+## Getting Started
 
 1.  **Create a NextJS app.**
 
@@ -69,7 +80,7 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 
     Open the project in your code editor of choice and edit `src/pages/index.tsx`. Save your changes and the browser will update in real time!
 
-## ⭐ Features
+## Features
 
 ### Main features
 
@@ -142,9 +153,9 @@ The analyzer script (`yarn analyze`) builds the project and generates static HTM
 
 You can find the generated reports under `next/analyze/`.
 
-## 🧐 What's inside?
+## What's inside?
 
-### 👷‍♂️ Available Scripts
+### Available Scripts
 
 ```bash
 # local development
@@ -187,7 +198,7 @@ yarn storybook
 yarn storybook:build
 ```
 
-### 📂 Folder Structure
+### Folder Structure
 
 ```bash
 .
@@ -238,7 +249,7 @@ yarn storybook:build
 └── yarn.lock
 ```
 
-## 💫 Deploy
+## Deploy
 
 [NextJS](https://nextjs.org/) apps can be easily deployed to custom Node.js servers, as Docker images, static HTML exports, and [Vercel](https://vercel.com/) (recommended).
 
