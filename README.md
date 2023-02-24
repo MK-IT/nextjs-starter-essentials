@@ -54,7 +54,11 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
     Start the NextJS app in development mode.
 
     ```
+    # standard NextJS development mode
     yarn dev
+
+    # Storybook development mode
+    yarn storybook
     ```
 
     _Note: You can change the contents of `src/` in any way you like. Most pre-defined pages and components are for demo purposes only._
@@ -72,6 +76,7 @@ _Help us improve by [submitting suggestions and bug reports](https://github.com/
 - [x] 💪 **Latest TS support**
 - [x] 💎 **ReactJS + NextJS**
 - [x] ⚡️ **ESLint, Prettier, EditorConfig**
+- [x] 📕 **Storybook**
 - [x] 🧪 **Jest + React Testing Library**
 - [x] 🛠 **`.env` configuration**
 - [x] 📂 **Clean folder structure**
@@ -179,7 +184,7 @@ yarn release
 yarn storybook
 
 # build static Storybook site
-yarn storybook:b
+yarn storybook:build
 ```
 
 ### 📂 Folder Structure
@@ -191,7 +196,7 @@ yarn storybook:b
 │   └── pre-push
 │── .storybook            # Storybook Configuration
 │   ├── main.js
-│   └── preview.js            # format, lint, and build
+│   └── preview.js
 ├── .hygen                # Hygen templates
 │   ├── nextjs              # NextJS API templates
 │   └── react               # React templates
