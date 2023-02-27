@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+
 import { buildKeywordsTag, buildImageTag, buildCanonicalUrlTag } from "./seo";
 
 jest.mock("next/router", () => ({
