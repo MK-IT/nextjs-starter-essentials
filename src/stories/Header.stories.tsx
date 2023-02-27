@@ -1,5 +1,6 @@
-import type { Story } from "@storybook/react";
 import Header, { HeaderProps } from "./Header";
+
+import type { Story } from "@storybook/react";
 
 export default {
   title: "Example/Header",
