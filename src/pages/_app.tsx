@@ -2,7 +2,6 @@
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import type { ReactElement, ReactNode } from "react";
-import { useState } from "react";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import defaultSEOProps from "@root/next-seo.config";
@@ -17,7 +16,6 @@ type AppPropsWithLayout = AppProps & {
 };
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
-  useState();
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page);
 
