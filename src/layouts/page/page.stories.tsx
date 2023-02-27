@@ -1,7 +1,6 @@
-import { Story } from "@storybook/react";
-
-import Page from "./page";
 import type PageProps from "./page.props";
+import { Story } from "@storybook/react";
+import Page from "./page";
 
 export default {
   title: "layouts/Page",

@@ -1,5 +1,4 @@
 import type { Story } from "@storybook/react";
-
 import Header, { HeaderProps } from "./Header";
 
 export default {
