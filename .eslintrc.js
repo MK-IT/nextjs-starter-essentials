@@ -41,5 +41,57 @@ module.exports = {
         peerDependencies: true,
       },
     ],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent", "index"],
+          "type",
+        ],
+        pathGroups: [
+          {
+            pattern: "@root/**",
+            group: "internal",
+          },
+          {
+            pattern: "@pages/**",
+            group: "internal",
+          },
+          {
+            pattern: "@layouts/**",
+            group: "internal",
+          },
+          {
+            pattern: "@components/**",
+            group: "internal",
+          },
+          {
+            pattern: "@styles/**",
+            group: "internal",
+          },
+          {
+            pattern: "@hooks/**",
+            group: "internal",
+          },
+          {
+            pattern: "@utils/**",
+            group: "internal",
+          },
+          {
+            pattern: "@types/**",
+            group: "internal",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["type"],
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
 };
