@@ -1,6 +1,4 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import { useState } from "react";
-
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 
@@ -20,7 +18,6 @@ type AppPropsWithLayout = AppProps & {
 };
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
-  useState();
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page);
 
