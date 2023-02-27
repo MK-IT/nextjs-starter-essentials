@@ -10,15 +10,23 @@ module.exports = {
   ],
   plugins: ["testing-library"],
   parserOptions: {
-    project: "./tsconfig.json"
+    project: "./tsconfig.json",
   },
-  overrides: [// Only uses Testing Library lint rules in test files
-  {
-    files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-    extends: ["plugin:testing-library/react"]
-  }],
+  overrides: [
+    // Only uses Testing Library lint rules in test files
+    {
+      files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      extends: ["plugin:testing-library/react"],
+    },
+  ],
   // silence TS lint error on JS files
-  ignorePatterns: [".eslintrc.js", "jest.config.js", "jest.setup.js", "next.config.js", "next-sitemap.config.js"],
+  ignorePatterns: [
+    ".eslintrc.js",
+    "jest.config.js",
+    "jest.setup.js",
+    "next.config.js",
+    "next-sitemap.config.js",
+  ],
   rules: {
     // override the rule defaults from extensions to allow devDependencies imports in Storybook stories
     "import/no-extraneous-dependencies": [
@@ -31,6 +39,40 @@ module.exports = {
           "**/.storybook/**/*.*",
         ],
         peerDependencies: true,
+      },
+    ],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "type",
+          ["builtin", "external"],
+          "internal",
+          ["sibling", "parent", "index"],
+        ],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "next/**",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "@*/**",
+            group: "internal",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["type", "react", "next"],
+        "newlines-between": "never",
+        warnOnUnassignedImports: true,
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
       },
     ],
   },
