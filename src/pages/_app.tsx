@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
-import type { ReactElement, ReactNode } from "react";
-import type { AppProps } from "next/app";
-import type { NextPage } from "next";
 
 import defaultSEOProps from "@root/next-seo.config";
 import "@styles/globals.scss";
+
+import type { NextPage } from "next";
+import type { AppProps } from "next/app";
+import type { ReactElement, ReactNode } from "react";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
