@@ -52,14 +52,41 @@ module.exports = {
         ],
         pathGroups: [
           {
-            pattern: "@*/**",
-            group: "internal",
-            position: "before",
-          },
-          {
             pattern: "react",
             group: "external",
             position: "before",
+          },
+          {
+            pattern: "@root/**",
+            group: "internal",
+          },
+          {
+            pattern: "@pages/**",
+            group: "internal",
+          },
+          {
+            pattern: "@layouts/**",
+            group: "internal",
+          },
+          {
+            pattern: "@components/**",
+            group: "internal",
+          },
+          {
+            pattern: "@styles/**",
+            group: "internal",
+          },
+          {
+            pattern: "@hooks/**",
+            group: "internal",
+          },
+          {
+            pattern: "@utils/**",
+            group: "internal",
+          },
+          {
+            pattern: "@types/**",
+            group: "internal",
           },
         ],
         pathGroupsExcludedImportTypes: ["react", "type"],
