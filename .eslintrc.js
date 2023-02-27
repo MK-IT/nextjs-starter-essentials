@@ -45,29 +45,25 @@ module.exports = {
       "error",
       {
         groups: [
-          "type",
           ["builtin", "external"],
           "internal",
           ["sibling", "parent", "index"],
+          "type",
         ],
         pathGroups: [
+          {
+            pattern: "@*/**",
+            group: "internal",
+            position: "before",
+          },
           {
             pattern: "react",
             group: "external",
             position: "before",
           },
-          {
-            pattern: "next/**",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "@*/**",
-            group: "internal",
-          },
         ],
-        pathGroupsExcludedImportTypes: ["type", "react", "next"],
-        "newlines-between": "never",
+        pathGroupsExcludedImportTypes: ["react", "type"],
+        "newlines-between": "always",
         warnOnUnassignedImports: true,
         alphabetize: {
           order: "asc",
