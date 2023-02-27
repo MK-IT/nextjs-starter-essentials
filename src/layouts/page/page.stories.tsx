@@ -1,6 +1,7 @@
 import { Story } from "@storybook/react";
 
 import Page from "./page";
+
 import type PageProps from "./page.props";
 
 export default {
