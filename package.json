@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/config-conventional": "^17.4.4",
     "@ls-lint/ls-lint": "^1.11.2",
     "@next/eslint-plugin-next": "^13.0.5",
     "@storybook/addon-actions": "^6.5.13",
