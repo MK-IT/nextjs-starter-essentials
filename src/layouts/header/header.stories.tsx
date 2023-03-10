@@ -1,6 +1,7 @@
-import { Story } from "@storybook/react";
-
 import Header from "./header";
+
+import type { Story } from "@storybook/react";
+
 
 export default {
   title: "layouts/Header",
