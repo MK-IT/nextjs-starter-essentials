@@ -41,6 +41,7 @@ module.exports = {
         peerDependencies: true,
       },
     ],
+    "@typescript-eslint/consistent-type-imports": "error",
     "import/order": [
       "error",
       {
