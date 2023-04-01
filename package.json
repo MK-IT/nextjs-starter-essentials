@@ -34,7 +34,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "^13.0.5",
     "next": "13.2.3",
-    "next-seo": "^5.15.0",
+    "next-seo": "^6.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.58.0"
